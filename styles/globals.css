@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --accent: 255, 79, 94;
+    --dark-background: 17, 24, 39;
+    --light-background: 31, 41, 55;
+}
+
+.body,
+html {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: rgb(var(--accent)) rgb(var(--dark-background));
+}
+
+::selection {
+    color: rgb(var(--accent));
+    background: rgb(var(--accent), 0.25);
+}
+
+.snap {
+    scroll-snap-align: start;
+}
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgb(var(--dark-background));
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(var(--accent));
+    border-radius: 3px;
+    border: 3px solid rgb(var(--accent));
+}
+
+/* Global Classes */
+
+.text-accent {
+    color: rgb(var(--accent));
+}
+
+.bg-accent {
+    background-color: rgb(var(--accent));
+}
+
+.bg-light {
+    background-color: rgb(var(--light-background));
+}
+
+.bg-dark {
+    background-color: rgb(var(--dark-background));
+}
