@@ -30,7 +30,7 @@ export default function Servers() {
                                                 <img
                                                     src={server.background}
                                                     className="rounded-md shadow-md w-96 h-50"
-                                                    alt="BeamMP"
+                                                    alt={server.name}
                                                 />
                                                 <div className="absolute w-10 h-10 left-4 bottom-16">
                                                     <img src={server.icon} alt={server.name}/>

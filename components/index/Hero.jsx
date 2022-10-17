@@ -8,7 +8,7 @@ export default function Hero() {
                     <h1 className="mt-4 text-4xl font-black tracking-tight select-none text-accent sm:mt-5 sm:leading-none lg:mt-6 lg:text-5xl xl:text-6xl">
                         Horizon Hosting
                     </h1>
-                    <h2 className="mt-3 text-md font-thin select-none md:block lg:text-3xl xl:text-4xl">
+                    <h2 className="mt-3 font-thin select-none text-md md:block lg:text-3xl xl:text-4xl">
                         ⚡ High performance. 🤑 Low prices. 🔥 No compromises.
                     </h2>
                     <p className="pt-8 text-base md:pt-5 sm:mt-5 sm:text-3xl lg:text-xl xl:text-2xl">
@@ -31,10 +31,10 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="z-10 hidden pl-3 lg:max-w-lg lg:w-full md:w-1/7 md:block">
-                    <div className="h-64 w-96 relative">
+                    <div className="relative h-64 w-96">
                         <Image
                             src={`/assets/index.svg`}
-                            alt="e"
+                            alt="Servers Image"
                             layout="fill"
                             objectFit="cover"
                             className="object-cover object-center select-none"
